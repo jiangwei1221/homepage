@@ -6,84 +6,122 @@
         <link rel="shortcut icon" href="images/qrcode.png" type="image/x-icon" />
         <title>Jiangwei Yu</title>
         <meta name="description" content="the Homepage of Jiangwei Yu">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="content">
-        <center>
-            <h1>[ Jiangwei Yu ]</h1>
-            <pre>+1 780-707-6548    jiangwei@ualberta.ca    yujiangwei.com</pre>
-            <address>
-                Department of Computing Science, University of Alberta<br>
-                Edmonton, Alberta, Canada
-            </address>
-        </center>
-        <h3>About me</h3>
-        <p>
-            I am a second-year Master's student in the Department of Computing Science, University of Alberta. I am working with Dr. Davood Rafiei in the Database Systems Group. Before coming to Canada, I got my Bachelor degree in Computer Science from Tsinghua University in China.
-        </p>
-        <p>
-            I am highly interested in text analytics and Web mining. My research topic is geo-tagging named entities in diverse Web pages. Previously I worked on relation extraction in text content using co-clustering techniques.
-        </p>
-        <p>
-            Besides working towards the degree, I spend time in building apps and tools, solving algorithmic problems/puzzles, and playing chess.         
-        </p>
+        <div class="container" id="wrapper">
+            <div class="row" style="height: 90%;">
+                <div id="content" class="span10">
+                    <div class="row">
+                        <div class="span10">
+                            <center>
+                                <h1>[ Jiangwei Yu ]</h1>
+                                <pre>+1 780-707-6548    jiangwei@ualberta.ca    yujiangwei.com</pre>
+                                <address>
+                                    Department of Computing Science, University of Alberta<br>
+                                    Edmonton, Alberta, Canada
+                                </address>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+                            <li><a href="#education" data-toggle="tab">Education</a></li>
+                            <li><a href="#employments" data-toggle="tab">Employments</a></li>
+                            <li><a href="#technical" data-toggle="tab">Side Projects</a></li>
+                            <li><a href="#awards" data-toggle="tab">Awards</a></li>
+                            <li><a href="#social" data-toggle="tab">Social</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="about">
+                                <p>
+                                    I am a second-year Master's student in the Department of Computing Science, University of Alberta. I am working with Dr. Davood Rafiei in the Database Systems Group. Before coming to Canada, I got my Bachelor degree in Computer Science from Tsinghua University in China.
+                                </p>
+                                <p>
+                                    I am highly interested in text analytics and Web mining. My research topic is geo-tagging named entities in diverse Web pages. Previously I worked on relation extraction in text content using co-clustering techniques.
+                                </p>
+                                <p>
+                                    Besides working towards the degree, I spend time in building apps and tools, solving algorithmic problems/puzzles, and playing chess.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="education">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="tab-pane" id="employments">
+                                <h4 class="work">TopCoder <span class="work-time">(2011/08 - 2012/06)</span> </h4>
+                                    <p>Independent software developer. Built and maintained several Web applications such as TopCoder Forums.</p>        
+                                <h4 class="work">IBM <span class="work-time">(2010/08 ~ 2010/11)</span></h4>
+                                    <p>Software engineer intern at IBM China Development Lab. Worked on an incubating IaaS project and was responsible on system script development and testing.</p>    
+                            </div>
+                            <div class="tab-pane" id="technical">
+                                <h3>Projects</h3>
+                                <h4>Geo-tagging named entities</h4>
+                                    <p>
+                                        Mining location information for named entities in diverse Web pages by analyzing the mentions of a name and through modelling the relationship between a mention and a possible location.
+                                    </p>
+                                    <p>
+                                        Demo: <a href="http://geo-tagger-2013.herokuapp.com/" target="_blank">http://geo-tagger-2013.herokuapp.com/</a>
+                                    </p>
+                                <h4>In-image Advertisement</h4>
+                                    <p>
+                                        Built a prototype of an in-image avertisement JavaScript library.
+                                    </p>
+                                <h4>pTrack</h4>
+                                    <p>
+                                        A system that keeps track of user footprints in multiple social networks.
+                                    </p>
+                            </div>
+                            <div class="tab-pane" id="awards">
+                                <h3>Awards</h3>
+                                <ul>
+                                    <li>Finalist of Student Contest on Software Engineering 2013 (<a href="http://score-contest.org/2013/index.php">SCORE'13</a>), San Francisco.</li>
+                                    <li>2012-2013 Master’s Scholarship of University of Alberta (the only one in CS department)</li>
+                                    <li>Second Place of ACM/ICPC Regional Contest in Chengdu, China, 2007.</li>
+                                    <li>First Prize Awardee of the National Olympiad in Informatics of China, 2006.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-        <h3>Projects</h3>
-        <h4>Geo-tagging named entities</h4>
-            <p>
-                Mining location information for named entities in diverse Web pages by analyzing the mentions of a name and through modelling the relationship between a mention and a possible location.
-            </p>
-        <h4>In-image Advertisement</h4>
-            <p>
-                Built a prototype of an in-image avertisement JavaScript library.
-            </p>
-        <h4>pTrack</h4>
-            <p>
-                A system that keeps track of user footprints in multiple social networks.
-            </p>
-            
-        <h3>Working Experiences</h3>
-        <h4 class="work">TopCoder <span class="work-time">(2011/08 - 2012/06)</span> </h4>
-            <p>Independent software developer. Built and maintained several Web applications such as TopCoder Forums.</p>        
-        <h4 class="work">IBM <span class="work-time">(2010/08 ~ 2010/11)</span></h4>
-            <p>Software engineer intern at IBM China Development Lab. Worked on an incubating IaaS project and was responsible on system script development and testing.</p>
-                        
-        <h3>Awards</h3>
-            <ul>
-                <li>Finalist of Student Contest on Software Engineering 2013 (<a href="http://score-contest.org/2013/index.php">SCORE'13</a>), San Francisco.</li>
-                <li>2012-2013 Master’s Scholarship of University of Alberta (the only one in CS department)</li>
-                <li>Second Place of ACM/ICPC Regional Contest in Chengdu, China, 2007.</li>
-                <li>First Prize Awardee of the National Olympiad in Informatics of China, 2006.</li>
-            </ul>
-        <!-- footer -->
-        <hr>
-        <h5>
-            Detailed PDF version resume and references are provided upon request.
-            <span class="last-update">
-                <script language="javascript"> 
-                    months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
-                    var d=new Date();
-                    var weekday=new Array(7);
-                    weekday[0]="Sunday";
-                    weekday[1]="Monday";
-                    weekday[2]="Tuesday";
-                    weekday[3]="Wednesday";
-                    weekday[4]="Thursday";
-                    weekday[5]="Friday";
-                    weekday[6]="Saturday";
-
-                    var d = new Date();
-                    (d.getFullYear());
-
-                    var theDate = new Date(document.lastModified); 
-                    theDate.setTime((theDate.getTime()+(60*60)));
-                    with (theDate) {
-                        document.write("<i>Last updated "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()+' '+getHours()+':'+getMinutes()+" GMT</i>")
-                    }
-                </script>
-            </span>
-        </h5>
+                    <!-- footer -->
+<!--
+                    <div class="row" id="footer">
+                        <div class="span10" style="float: none; margin: 20 auto;">
+                            <h5>
+                                The detailed resume and references are provided upon request.
+                                <span class="last-update">
+                                    <script language="javascript"> 
+                                        months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+                                        var d=new Date();
+                                        var weekday=new Array(7);
+                                        weekday[0]="Sunday";
+                                        weekday[1]="Monday";
+                                        weekday[2]="Tuesday";
+                                        weekday[3]="Wednesday";
+                                        weekday[4]="Thursday";
+                                        weekday[5]="Friday";
+                                        weekday[6]="Saturday";
+                    
+                                        var d = new Date();
+                                        (d.getFullYear());
+                    
+                                        var theDate = new Date(document.lastModified); 
+                                        theDate.setTime((theDate.getTime()+(60*60)));
+                                        with (theDate) {
+                                            document.write("<i>Last updated "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()+' '+getHours()+':'+getMinutes()+" GMT</i>")
+                                        }
+                                    </script>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+-->
+                </div>
+            </div>
         </div>
     </body>
 </html>
