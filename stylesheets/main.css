@@ -1,3 +1,4 @@
+/*
 html {
     background-color: #eeeeee;
     background-image: linear-gradient(bottom, rgb(238,238,238) 18%, rgb(153,153,153) 59%, rgb(238,238,238) 80%);
@@ -6,11 +7,26 @@ html {
     background-image: -webkit-linear-gradient(bottom, rgb(238,238,238) 18%, rgb(153,153,153) 59%, rgb(238,238,238) 80%);
     background-image: -ms-linear-gradient(bottom, rgb(238,238,238) 18%, rgb(153,153,153) 59%, rgb(238,238,238) 80%);
 }
+*/
 
 body {
+    background-color: #eee;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+#content {
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 2em;
-    max-width: 800px;
+/*    max-width: 800px;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5em;
@@ -19,6 +35,15 @@ body {
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    float:none;
+    height: 95%;
+    overflow:scroll;
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
